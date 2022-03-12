@@ -43,8 +43,13 @@
   font-weight: bold;
 }
 
+<<<<<<< HEAD
+.cont-label label{
+    margin: 10px;
+=======
 .opinion {
   margin: 25px 35px;
+>>>>>>> main
 }
 
 .opinion p {

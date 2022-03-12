@@ -33,8 +33,14 @@
   margin: 10px;
   color: var(--secondary);
   font-size: 30px;
+  transition-duration: 1.5s;
+  transition-property: background-color;
 }
-.productOption button {
+.productOption i:hover {
+  color: var(--white);
+}
+
+.productOption #aumentar1 {
   background-color: var(--secondary);
   width: 40px;
   height: 40px;
@@ -42,6 +48,29 @@
   color: var(--white);
   font: var(--small-paragraph);
   border: none;
+  transition-duration: 1.5s;
+  transition-property: background-color;
+}
+.productOption #aumentar1:hover {
+  background-color: var(--white);
+  color: var(--secondary);
+  font: var(--small-paragraph);
+}
+.productOption #disminuir {
+  background-color: var(--white);
+  width: 45px;
+  height: 40px;
+  border-radius: 8px;
+  color: var(--secondary);
+  font: var(--small-paragraph);
+  border: none;
+  transition-duration: 1.5s;
+  transition-property: background-color;
+}
+.productOption #disminuir:hover {
+  background-color: var(--secondary);
+  color: var(--white);
+  font: var(--small-paragraph);
 }
 .productOption .cantidad {
   display: flex;
@@ -77,6 +106,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 .summaryOfPurchase .resumen {
   padding: 8px;
@@ -119,6 +149,19 @@
 .summaryOfPurchase .resumen button:hover {
   background-color: var(--secondary);
   color: var(--white);
+}
+
+@media (min-width: 540px) and (max-width: 768px) {
+  .productList {
+    width: 100%;
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+  .productOption {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 769px) {
